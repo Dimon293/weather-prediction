@@ -1,0 +1,25 @@
+disc;Location;top:Canberra;{'Albury': 0, 'BadgerysCreek': 1, 'Cobar': 2, 'CoffsHarbour': 3, 'Moree': 4, 'Newcastle': 5, '-1rahHead': 6, '-1rfolkIsland': 7, 'Penrith': 8, 'Richmond': 9, 'Sydney': 10, 'SydneyAirport': 11, 'WaggaWagga': 12, 'Williamtown': 13, 'Wollongong': 14, 'Canberra': 15, 'Tuggera-1ng': 16, 'MountGinini': 17, 'Ballarat': 18, 'Bendigo': 19, 'Sale': 20, 'MelbourneAirport': 21, 'Melbourne': 22, 'Mildura': 23, 'Nhil': 24, 'Portland': 25, 'Watsonia': 26, 'Dartmoor': 27, 'Brisbane': 28, 'Cairns': 29, 'GoldCoast': 30, 'Townsville': 31, 'Adelaide': 32, 'MountGambier': 33, 'Nuriootpa': 34, 'Woomera': 35, 'Albany': 36, 'Witchcliffe': 37, 'PearceRAAF': 38, 'PerthAirport': 39, 'Perth': 40, 'SalmonGums': 41, 'Walpole': 42, 'Hobart': 43, 'Launceston': 44, 'AliceSprings': 45, 'Darwin': 46, 'Katherine': 47, 'Uluru': 48}
+cont;MinTemp;max:31.4;min:-7.06
+cont;MaxTemp;max:44.46;min:2.17
+cont;Rainfall;max:14.37;min:0.0
+cont;Evaporation;max:15.010926;min:0.0
+cont;Sunshine;max:14.5;min:0.0
+cont;WindGustDir;max:337.5;min:0.0
+cont;WindGustSpeed;max:78.0;min:2.0
+cont;WindDir9am;max:337.5;min:0.0
+cont;WindDir3pm;max:337.5;min:0.0
+cont;WindSpeed9am;max:39.0;min:0.0
+cont;WindSpeed3pm;max:44.0;min:0.0
+cont;Humidity9am;max:100.0;min:11.0
+cont;Humidity3pm;max:100.0;min:0.0
+cont;Pressure9am;max:1038.45;min:997.02
+cont;Pressure3pm;max:1035.9338;min:994.69586
+cont;Cloud9am;max:9.0;min:0.0
+cont;Cloud3pm;max:9.0;min:0.0
+cont;Temp9am;max:36.42;min:-2.35
+cont;Temp3pm;max:42.13429;min:1.29
+bol;RainToday;max:1;min:-1
+
+
+target_features = ["RainToday", "Temp9am", "Temp3pm", "Humidity9am", "Humidity3pm", "Rainfall", "Evaporation", "WindSpeed9am", "WindSpeed3pm", "Cloud9am"]
+

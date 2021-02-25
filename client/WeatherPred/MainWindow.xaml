@@ -1,0 +1,71 @@
+﻿<Window x:Class="WeatherPred.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherPred"
+        mc:Ignorable="d"
+        Title="Прогнозирование погоды " Height="326" Width="584" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="comboBoxLoc" Margin="10,31,22,0" VerticalAlignment="Top" Height="28" IsEditable="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Локация" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxMinTemp" HorizontalAlignment="Left" Height="28" Margin="10,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" MaxLength="6"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,63,0,0" TextWrapping="Wrap" Text="Min и Max температура" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxMaxTemp" HorizontalAlignment="Left" Height="28" Margin="104,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" MaxLength="6"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,117,0,0" TextWrapping="Wrap" Text="Выпадение осадков" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxRainfall" HorizontalAlignment="Left" Height="28" Margin="10,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,171,0,0" TextWrapping="Wrap" Text="Испарение" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxEvaporation" HorizontalAlignment="Left" Height="28" Margin="10,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="10,224,0,0" TextWrapping="Wrap" Text="Число солнечных часов" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxSunshine" HorizontalAlignment="Left" Height="28" Margin="10,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Margin="18,10,0,0" TextWrapping="Wrap" Text="Направление ветра" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="textBoxWindGustDir" HorizontalAlignment="Right" Height="28" Margin="0,31,15,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,65,0,0" TextWrapping="Wrap" Text="Скорость ветра" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="textBoxWindGustSpeed" HorizontalAlignment="Left" Height="28" Margin="17,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,121,0,0" TextWrapping="Wrap" Text="Направл. ветра в 9am и 3pm" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="textBoxWindDir9am" HorizontalAlignment="Left" Height="28" Margin="17,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="1"/>
+        <TextBox x:Name="textBoxWindDir3pm" HorizontalAlignment="Left" Height="28" Margin="111,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,172,0,0" TextWrapping="Wrap" Text="Скорость ветра в 9am и 3pm" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="textBoxWindSpeed9am" HorizontalAlignment="Left" Height="28" Margin="17,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="1"/>
+        <TextBox x:Name="textBoxWindSpeed3pm" HorizontalAlignment="Left" Height="28" Margin="111,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="1"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="17,224,0,0" TextWrapping="Wrap" Text="Влажность в 9am и 3pm" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="textBoxHumidity9am" HorizontalAlignment="Left" Height="28" Margin="17,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="1"/>
+        <TextBox x:Name="textBoxHumidity3pm" HorizontalAlignment="Left" Height="28" Margin="111,245,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="1"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="17,10,0,0" TextWrapping="Wrap" Text="Давление в 9am и 3pm" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox x:Name="textBoxPressure9am" HorizontalAlignment="Left" Height="28" Margin="17,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="2"/>
+        <TextBox x:Name="textBoxPressure3pm" HorizontalAlignment="Left" Height="28" Margin="108,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="2"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="17,64,0,0" TextWrapping="Wrap" Text="Облачность в 9am и 3pm" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox x:Name="textBoxCloud9am" HorizontalAlignment="Left" Height="28" Margin="17,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="2"/>
+        <TextBox x:Name="textBoxCloud3pm" HorizontalAlignment="Left" Height="28" Margin="109,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="2"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="17,118,0,0" TextWrapping="Wrap" Text="Температура в 9am и 3pm" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox x:Name="textBoxTemp9am" HorizontalAlignment="Left" Height="28" Margin="17,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Grid.Column="2"/>
+        <TextBox x:Name="textBoxTemp3pm" HorizontalAlignment="Left" Height="28" Margin="108,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" RenderTransformOrigin="-0.53,-5.75" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,171,0,0" TextWrapping="Wrap" Text="Дождь сегодня" VerticalAlignment="Top" Grid.Column="2"/>
+        <TextBox x:Name="textBoxRainToday" HorizontalAlignment="Left" Height="28" Margin="17,192,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="157" RenderTransformOrigin="-0.53,-5.75" Grid.Column="2"/>
+
+        <Button x:Name="buttonGener" ToolTip="Сгенерировать значения" Background="Transparent" HorizontalAlignment="Left" Margin="17,239,0,0" VerticalAlignment="Top" Width="34" Height="34" Grid.Column="2" Click="ButtonGener_Click">
+            <Image Source="icons\edit.png" RenderTransformOrigin="0.628,-0.047"></Image>
+        </Button>
+        <Button x:Name="buttonNext" ToolTip="Сгенерировать значения" Background="Transparent" HorizontalAlignment="Left" Margin="140,239,0,0" VerticalAlignment="Top" Width="34" Height="34" Grid.Column="2" Click="ButtonNext_Click">
+            <Image Source="icons\next.png" RenderTransformOrigin="0.628,-0.047"></Image>
+        </Button>
+        <Button x:Name="buttonPred"  ToolTip="Спрогнозирвоать погоду"  Background="Transparent" HorizontalAlignment="Left" Margin="59,239,0,0" VerticalAlignment="Top" Width="34" Height="34" Grid.Column="2" Click="ButtonPred_Click">
+            <Image Source="icons\umbrella.png"></Image>
+        </Button>
+        <Button x:Name="buttonChart" ToolTip="Построить график" Background="Transparent" HorizontalAlignment="Left" Margin="100,239,0,0" VerticalAlignment="Top" Width="34" Height="34" Grid.Column="2" Click="ButtonChart_Click">
+            <Image Source="icons\graph.png"></Image>
+        </Button>
+
+    </Grid>
+</Window>

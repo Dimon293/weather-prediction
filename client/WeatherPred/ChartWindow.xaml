@@ -1,0 +1,54 @@
+﻿<Window x:Class="WeatherPred.ChartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherPred"
+        xmlns:wf="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+        mc:Ignorable="d"
+        Title="ChartWindow" Height="867.2" Width="1365.5" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <WindowsFormsHost Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="1">
+            <WindowsFormsHost.Child>
+                <wf:Chart x:Name="chartMinMaxTemp" Visible="True"/>
+            </WindowsFormsHost.Child>
+        </WindowsFormsHost>
+
+        <WindowsFormsHost Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="1">
+            <WindowsFormsHost.Child>
+                <wf:Chart x:Name="chartRainfall" Visible="True"/>
+            </WindowsFormsHost.Child>
+        </WindowsFormsHost>
+        <WindowsFormsHost Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="1">
+            <WindowsFormsHost.Child>
+                <wf:Chart x:Name="chartWindSpeed" Visible="True"/>
+            </WindowsFormsHost.Child>
+        </WindowsFormsHost>
+<WindowsFormsHost Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="1">
+            <WindowsFormsHost.Child>
+                <wf:Chart x:Name="chartMinMaxTempDisp" Visible="True"/>
+            </WindowsFormsHost.Child>
+        </WindowsFormsHost>
+
+        <WindowsFormsHost Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="1">
+            <WindowsFormsHost.Child>
+                <wf:Chart x:Name="chartRainfallDisp" Visible="True"/>
+            </WindowsFormsHost.Child>
+        </WindowsFormsHost>
+        <WindowsFormsHost Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="1">
+            <WindowsFormsHost.Child>
+                <wf:Chart x:Name="chartWindSpeedDisp" Visible="True"/>
+            </WindowsFormsHost.Child>
+        </WindowsFormsHost>
+    </Grid>
+</Window>
